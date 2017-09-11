@@ -783,6 +783,10 @@ table {
 body {
   color: #000; }
 
+main {
+  padding-top: 83px;
+  margin-bottom: 125px; }
+
 a {
   color: #000;
   text-decoration: none; }
@@ -875,10 +879,6 @@ header {
     text-transform: uppercase; }
     .header-menu__link:after {
       bottom: -2px; }
-
-.h-main {
-  padding-top: 83px;
-  margin-bottom: 125px; }
 
 .h-sec1 {
   margin-bottom: 75px;
