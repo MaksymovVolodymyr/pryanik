@@ -1,0 +1,82 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+@mixin flex-sp-betw {
+	display: flex;
+	justify-content: space-between;
+}
+@mixin font24light  {
+	font: {
+		size: 24px;
+		weight: 300;
+	}
+}
+@mixin ab-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+body {
+	color: #000;
+}
+a {
+	color: #000;
+	text-decoration: none;
+}
+h2 {
+	@include font24light;
+}
+.hover-line {
+	position: relative;
+	overflow: hidden;
+	transition: .4s;
+	&:after {
+	    position: absolute;
+	    transition: .4s;
+	    content: '';
+	    width: 0;
+	    left: 0;
+	    bottom: 0;
+	    height: 1px;
+	    background: #000;
+	  }
+	&:hover {
+		cursor: pointer;
+		&:after {
+			width: 100%;
+		}
+	}
+}
+.bgimg {
+	background-position: 50% 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.btn {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font: {
+		size: 16px;
+		weight: 300;
+	}
+	text-transform: uppercase;
+	border: 1px solid #000;
+}
+.logo__img {
+	height: 20px;
+	width: auto;
+}
+.main-link {
+	padding-top: 32px;
+	padding-bottom: 32px;
+	@include font24light;
+	background-color: #FFF;
+}
+.col-low {
+	padding-top: 20px;
+}
+.fl-wrap {
+	@include flex-sp-betw;
+	flex-wrap: wrap;
+}
