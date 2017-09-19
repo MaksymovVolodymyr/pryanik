@@ -344,6 +344,27 @@ header {
 	}
 	&__text {
 		margin-bottom: 20px;
+		line-height: 1.25;
+	}
+}
+
+//contact
+.contact {
+	font: {
+		size: 16px;
+		weigh: 300;
+	}
+	&__img {
+		margin-bottom: 95px;
+		max-width: 100%;
+		height: auto;
+	}
+	&__title {
+		margin: 55px 0 20px;
+	}
+	&__link {
+		display: block;
+		margin-bottom: 10px;
 	}
 }
 

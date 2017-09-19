@@ -1136,7 +1136,21 @@ header {
     .how-to-buy__h2:first-child {
       margin-top: 0; }
   .how-to-buy__text {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    line-height: 1.25; }
+
+.contact {
+  font-size: 16px;
+  font-weigh: 300; }
+  .contact__img {
+    margin-bottom: 95px;
+    max-width: 100%;
+    height: auto; }
+  .contact__title {
+    margin: 55px 0 20px; }
+  .contact__link {
+    display: block;
+    margin-bottom: 10px; }
 
 footer {
   padding-bottom: 125px;
