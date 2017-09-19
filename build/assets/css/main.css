@@ -1053,6 +1053,91 @@ header {
     margin: 30px 0 15px;
     font-style: italic; }
 
+.corpor-img-wrapper {
+  margin-top: 55px; }
+
+.corpor {
+  font-weight: 300; }
+  .corpor__h2 {
+    margin: 0 0 30px; }
+  .corpor__text {
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 1.25; }
+  .corpor__img {
+    margin-bottom: 20px;
+    max-width: 100%;
+    height: auto; }
+  .corpor__form {
+    margin-top: 60px; }
+
+.form {
+  max-width: 100%; }
+  .form__h2 {
+    margin-bottom: 30px; }
+  .form__input, .form__textarea {
+    display: block;
+    margin-bottom: 10px;
+    padding-left: 18px;
+    width: 320px;
+    max-width: 100%;
+    height: 50px;
+    border: 1px solid #000;
+    outline: none; }
+  .form__textarea {
+    margin-bottom: 20px;
+    padding-top: 18px;
+    min-height: 70px; }
+  .form__btn {
+    width: 320px;
+    max-width: 100%; }
+  .form__placehold {
+    position: relative; }
+    .form__placehold:after {
+      transition: all 0.3s;
+      position: absolute;
+      top: 18px;
+      left: 18px;
+      font-size: 16px;
+      font-weight: 300; }
+    .form__placehold--name:after {
+      content: 'Имя'; }
+    .form__placehold--tel:after {
+      content: 'Телефон'; }
+    .form__placehold--textarea:after {
+      content: 'Что вас интересует'; }
+  .form__placehold--active:after {
+    transition: all 0.3s;
+    top: 5px;
+    left: 12px; }
+  .form__placehold--pressed:after {
+    display: none; }
+
+.how-to-buy-menu {
+  position: fixed;
+  width: 940px;
+  left: 50%;
+  transform: translateX(-50%); }
+  .how-to-buy-menu__item {
+    margin-bottom: 20px; }
+  .how-to-buy-menu__link {
+    font-size: 16px;
+    font-weight: 300; }
+    .how-to-buy-menu__link:after {
+      bottom: -2px; }
+    .how-to-buy-menu__link--active:after {
+      width: 100%; }
+
+.how-to-buy {
+  font-size: 16px;
+  font-weight: 300; }
+  .how-to-buy__h2 {
+    margin: 30px 0; }
+    .how-to-buy__h2:first-child {
+      margin-top: 0; }
+  .how-to-buy__text {
+    margin-bottom: 20px; }
+
 footer {
   padding-bottom: 125px;
   font-size: 16px;

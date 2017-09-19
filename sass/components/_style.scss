@@ -227,6 +227,126 @@ header {
 	}
 }
 
+//corporate
+.corpor-img-wrapper {
+	margin-top: 55px;
+}
+.corpor {
+	font-weight: 300;
+	&__h2 {
+		margin: 0 0 30px;
+	}
+	&__text {
+		margin-bottom: 25px;
+		font-size: 16px;
+		line-height: 1.25;
+	}
+	&__img {
+		margin-bottom: 20px;
+		max-width: 100%;
+		height: auto;
+	}
+	&__form {
+		margin-top: 60px;
+	}
+}
+
+//form
+.form {
+	max-width: 100%;
+	&__h2 {
+		margin-bottom: 30px;
+	}
+	&__input {
+		display: block;
+		margin-bottom: 10px;
+		padding-left: 18px;
+		width: 320px;
+		max-width: 100%;
+		height: 50px;
+		border: 1px solid #000;
+		outline: none;
+	}
+	&__textarea {
+		@extend .form__input;
+		margin-bottom: 20px;
+		padding-top: 18px;
+		min-height: 70px;
+	}
+	&__btn {
+		width: 320px;
+		max-width: 100%;
+	}
+	&__placehold {
+		position: relative;
+		&:after {
+			transition: all 0.3s;
+			position: absolute;
+			top: 18px;
+			left: 18px;
+			font: {
+				size: 16px;
+				weight: 300;
+			}
+		}
+		&--name:after {
+			content: 'Имя';
+		}
+		&--tel:after {
+			content: 'Телефон';
+		}
+		&--textarea:after {
+			content: 'Что вас интересует';
+		}
+	}
+	&__placehold--active:after {
+		transition: all 0.3s;
+		top: 5px;
+		left: 12px;
+	}
+	&__placehold--pressed:after {
+		display: none;
+	}
+}
+
+//howToBuy
+.how-to-buy-menu {
+	position: fixed;
+	width: 940px;
+	left: 50%;
+	transform: translateX(-50%);
+	&__item {
+		margin-bottom: 20px;
+	}
+	&__link {
+		font: {
+			size: 16px;
+			weight: 300;
+		}
+		&:after {
+			bottom: -2px;
+		}	
+		&--active:after {
+			width: 100%;
+		}
+	}
+}
+.how-to-buy {
+	font: {
+		size: 16px;
+		weight: 300;
+	}
+	&__h2 {
+		margin: 30px 0;
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+	&__text {
+		margin-bottom: 20px;
+	}
+}
+
 //footer
 footer {
 	padding-bottom: 125px;
