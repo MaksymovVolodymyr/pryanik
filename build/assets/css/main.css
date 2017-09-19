@@ -795,6 +795,10 @@ h2 {
   font-size: 24px;
   font-weight: 300; }
 
+img {
+  max-width: 100%;
+  height: auto; }
+
 .hover-line {
   position: relative;
   overflow: hidden;
@@ -1019,9 +1023,6 @@ header {
     transform: translate(-50%, -50%);
     width: 74%;
     text-align: center; }
-  .sec-story__img {
-    max-width: 100%;
-    height: auto; }
   .sec-story__title {
     display: block;
     margin: 30px 0 15px;
@@ -1065,9 +1066,7 @@ header {
     font-size: 16px;
     line-height: 1.25; }
   .corpor__img {
-    margin-bottom: 20px;
-    max-width: 100%;
-    height: auto; }
+    margin-bottom: 20px; }
   .corpor__form {
     margin-top: 60px; }
 
@@ -1141,16 +1140,39 @@ header {
 
 .contact {
   font-size: 16px;
-  font-weigh: 300; }
+  font-weight: 300; }
   .contact__img {
-    margin-bottom: 95px;
-    max-width: 100%;
-    height: auto; }
+    margin-bottom: 95px; }
   .contact__title {
     margin: 55px 0 20px; }
   .contact__link {
     display: block;
     margin-bottom: 10px; }
+
+.article {
+  font-size: 16px;
+  font-weight: 300; }
+  .article__h2 {
+    margin-bottom: 30px; }
+  .article__text {
+    margin-bottom: 25px;
+    line-height: 1.25; }
+  .article__img {
+    margin-bottom: 20px; }
+
+.more-articles {
+  margin-top: 80px;
+  font-size: 16px;
+  font-weight: 300; }
+  .more-articles__h2 {
+    margin-bottom: 50px; }
+  .more-articles__img {
+    margin-bottom: 35px; }
+  .more-articles__title {
+    margin-bottom: 20px;
+    font-size: 20px; }
+  .more-articles__text {
+    line-height: 1.25; }
 
 footer {
   padding-bottom: 125px;

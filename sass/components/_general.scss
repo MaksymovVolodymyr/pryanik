@@ -11,6 +11,12 @@
 		weight: 300;
 	}
 }
+@mixin font16light  {
+	font: {
+		size: 16px;
+		weight: 300;
+	}
+}
 @mixin ab-center {
 	position: absolute;
 	top: 50%;
@@ -30,6 +36,10 @@ a {
 }
 h2 {
 	@include font24light;
+}
+img {
+	max-width: 100%;
+	height: auto;
 }
 .hover-line {
 	position: relative;
