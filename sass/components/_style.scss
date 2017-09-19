@@ -287,10 +287,7 @@ header {
 	&__placehold--active:after {
 		transition: all 0.3s;
 		top: 5px;
-		left: 12px;
-	}
-	&__placehold--pressed:after {
-		display: none;
+		font-size: 10px;
 	}
 }
 
@@ -394,6 +391,115 @@ $boxHeight: 360px;
 		margin-bottom: 20px;
 		display: block;
 		height: $boxHeight/2;
+	}
+}
+
+//bag
+.bag-nav {
+	margin-bottom: 55px;
+	&__item {
+		margin-right: 30px;	
+		position: relative;
+		font: {
+			size: 12px;
+			weight: 300;
+		}
+		color: #606060;
+		text-transform: uppercase;
+		&:after {
+			content: '';
+			position: absolute;
+			top: 4px;	
+			right: -20px;	
+			width: 6px;	
+			height: 1px;	
+			background-color: #606060;
+			transform: rotate(45deg);
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			top: 8px;	
+			right: -20px;	
+			width: 6px;	
+			height: 1px;	
+			background-color: #606060;
+			transform: rotate(-45deg);
+		}
+		&:last-child:before {
+			display: none;
+		}
+		&:last-child:after {
+			display: none;
+		}
+	}
+}
+.bag-prod {
+	min-height: 105px;
+	margin-bottom: 30px;
+	margin-right: 20px;
+	position: relative;
+	font-weight: 300;
+	vertical-align: middle;
+	&__img {
+		display: inline-block;
+		max-width: 140px;
+		height: auto;
+	}
+	&__title {
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		font-size: 18px;
+		text-align: center;
+	}
+	&__color {
+		display: inline-block;
+		margin-right: 20px;
+		width: 20px;
+		height: 20px;
+	}
+	&__size {
+		display: inline-block;
+		margin-right: 20px;
+		font-size: 12px;
+		text-transform: uppercase;
+	}
+	&__price {
+		display: inline-block;
+		font-size: 18px;
+	}
+	&__close {
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 8px;
+		width: 80px;
+		cursor: pointer;
+		&:after {
+			content: '';
+			position: absolute;
+			width: 10%;
+			height: 1px;
+			background-color: #000;
+			transform: rotate(45deg);
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			width: 10%;
+			height: 1px;
+			background-color: #000;
+			transform: rotate(-45deg);
+		}
+	}
+	&__amount {
+		position: absolute;
+		bottom: 0;
+		left: 140px;
+		font-size: 12px;
 	}
 }
 

@@ -1108,9 +1108,7 @@ header {
   .form__placehold--active:after {
     transition: all 0.3s;
     top: 5px;
-    left: 12px; }
-  .form__placehold--pressed:after {
-    display: none; }
+    font-size: 10px; }
 
 .how-to-buy-menu {
   position: fixed;
@@ -1191,6 +1189,97 @@ header {
   margin-bottom: 20px;
   display: block;
   height: 180px; }
+
+.bag-nav {
+  margin-bottom: 55px; }
+  .bag-nav__item {
+    margin-right: 30px;
+    position: relative;
+    font-size: 12px;
+    font-weight: 300;
+    color: #606060;
+    text-transform: uppercase; }
+    .bag-nav__item:after {
+      content: '';
+      position: absolute;
+      top: 4px;
+      right: -20px;
+      width: 6px;
+      height: 1px;
+      background-color: #606060;
+      transform: rotate(45deg); }
+    .bag-nav__item:before {
+      content: '';
+      position: absolute;
+      top: 8px;
+      right: -20px;
+      width: 6px;
+      height: 1px;
+      background-color: #606060;
+      transform: rotate(-45deg); }
+    .bag-nav__item:last-child:before {
+      display: none; }
+    .bag-nav__item:last-child:after {
+      display: none; }
+
+.bag-prod {
+  min-height: 105px;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  position: relative;
+  font-weight: 300;
+  vertical-align: middle; }
+  .bag-prod__img {
+    display: inline-block;
+    max-width: 140px;
+    height: auto; }
+  .bag-prod__title {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    text-align: center; }
+  .bag-prod__color {
+    display: inline-block;
+    margin-right: 20px;
+    width: 20px;
+    height: 20px; }
+  .bag-prod__size {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 12px;
+    text-transform: uppercase; }
+  .bag-prod__price {
+    display: inline-block;
+    font-size: 18px; }
+  .bag-prod__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 8px;
+    width: 80px;
+    cursor: pointer; }
+    .bag-prod__close:after {
+      content: '';
+      position: absolute;
+      width: 10%;
+      height: 1px;
+      background-color: #000;
+      transform: rotate(45deg); }
+    .bag-prod__close:before {
+      content: '';
+      position: absolute;
+      width: 10%;
+      height: 1px;
+      background-color: #000;
+      transform: rotate(-45deg); }
+  .bag-prod__amount {
+    position: absolute;
+    bottom: 0;
+    left: 140px;
+    font-size: 12px; }
 
 footer {
   padding-bottom: 125px;

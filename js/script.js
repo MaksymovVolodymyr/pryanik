@@ -1,18 +1,13 @@
 $('.form__input').focus( movePlaceholder );
 $('.form__textarea').focus( movePlaceholder );
 
-$('.form__input').keypress( removePlaceholder );
-$('.form__textarea').keypress( removePlaceholder );
 
 function movePlaceholder() {
 	$inputWrapper = $(this).parent();
 	$inputWrapper.addClass('form__placehold--active');
 }
 
-function removePlaceholder() {
-	$inputWrapper = $(this).parent();
-	$inputWrapper.addClass('form__placehold--pressed');
-}
+
 
 $(function(){
     var loc = window.location.pathname;
