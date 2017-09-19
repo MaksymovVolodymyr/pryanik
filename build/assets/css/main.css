@@ -1174,6 +1174,24 @@ header {
   .more-articles__text {
     line-height: 1.25; }
 
+.listpage__name {
+  position: relative;
+  height: 360px; }
+
+.listpage__h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px 80px;
+  width: 75%;
+  background-color: #FFF; }
+
+.listpage__item {
+  margin-bottom: 20px;
+  display: block;
+  height: 180px; }
+
 footer {
   padding-bottom: 125px;
   font-size: 16px;
