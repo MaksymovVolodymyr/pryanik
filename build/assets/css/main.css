@@ -824,7 +824,10 @@ h2 {
   font-size: 16px;
   font-weight: 300;
   text-transform: uppercase;
-  border: 1px solid #000; }
+  border: 1px solid #000;
+  cursor: pointer;
+  background-color: transparent;
+  outline: none; }
 
 .logo__img {
   height: 20px;
@@ -1004,17 +1007,36 @@ header {
     transform: translate(-50%, -50%);
     width: 74%; }
 
-.sec-story__box {
-  height: 400px;
-  position: relative; }
-
-.sec-story__link {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 74%;
-  text-align: center; }
+.sec-story {
+  font-weight: 300; }
+  .sec-story__box {
+    height: 400px;
+    position: relative; }
+  .sec-story__link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 74%;
+    text-align: center; }
+  .sec-story__img {
+    max-width: 100%;
+    height: auto; }
+  .sec-story__title {
+    display: block;
+    margin: 30px 0 15px;
+    font-size: 24px; }
+  .sec-story__text {
+    margin-bottom: 50px;
+    font-size: 16px;
+    line-height: 1.25; }
+  .sec-story__btn {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+        align-self: center;
+    padding-left: 35px;
+    padding-right: 35px; }
 
 .story {
   margin-bottom: 20px;

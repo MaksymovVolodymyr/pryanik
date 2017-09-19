@@ -177,6 +177,7 @@ header {
 
 //story
 .sec-story {
+	font-weight: 300;
 	&__box {
 		height: 400px;
 		position: relative;
@@ -185,6 +186,26 @@ header {
 		@include ab-center;
 		width: 74%;
 		text-align: center;
+	}
+	&__img {
+		max-width: 100%;
+		height: auto;
+	}
+	&__title {
+		display: block;
+		margin: 30px 0 15px;
+		font-size: 24px;
+	}
+	&__text {
+		margin-bottom: 50px;
+		font-size: 16px;
+		line-height: 1.25;
+	}
+	&__btn {
+		display: flex;
+		align-self: center;
+		padding-left: 35px;
+		padding-right: 35px;
 	}
 }
 .story {
