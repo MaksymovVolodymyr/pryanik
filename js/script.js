@@ -119,9 +119,15 @@ $('.corpor__more').click(function() {
 	$(this).hide();
 });
 
-$('.corpor-mob').slick();
+$('.mob-img-slider').slick();
 
 //bag
 $('.bag-prod__close').click(function() {
 	$(this).parent().hide('200');
+})
+
+//article
+$('.article__more').click(function() {
+	$('.article__text').slideDown();
+	$(this).hide();
 })

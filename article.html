@@ -9,6 +9,7 @@
 </head>
 <body>
 	<header>
+		<a href="" class="header-mob-back"></a>
 		<a href="" class="logo header-logo">
 			<img src="img/logo/logo.svg" alt="" class="logo__img">
 		</a>
@@ -30,12 +31,29 @@
 	<div class="container">
 
 		<main>
+
+			<div class="col-xs-12 mob-img-slider">
+					<div style="background-image: url(img/pryanik-layout-corpor-orders/1.jpg);" class="mob-img-slider__item bgimg">
+					</div>
+					<div style="background-image: url(img/pryanik-layout-corpor-orders/2.jpg);" class="mob-img-slider__item bgimg">
+					</div>
+					<div style="background-image: url(img/pryanik-layout-corpor-orders/3.jpg);" class="mob-img-slider__item bgimg">
+					</div>
+					<div style="background-image: url(img/pryanik-layout-corpor-orders/4.jpg);" class="mob-img-slider__item bgimg">
+					</div>
+					<div style="background-image: url(img/pryanik-layout-corpor-orders/6.jpg);" class="mob-img-slider__item bgimg">
+					</div>
+					<div style="background-image: url(img/pryanik-layout-corpor-orders/5.jpg);" class="mob-img-slider__item bgimg">
+					</div>
+				</div>
+
 			<section class="article">
 				<h2 class="article__h2">О прозрачности</h2>
 				<div class="row">
-					<div class="col-md-6">
-						<p class="article__text">
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<p class="article__text article__text--first">
 							Приступая к разработке новой линии своих изделий, не скроем, Pryanik несколько колебался. Насколько уместно применение нового материала в своих изделиях. Ведь то или иное качество, в одних ситуациях, просто превозносит предмет на недостижимую вершину и то же самое качество, в других условиях, категорически неприемлемо.
+							<span class="article__more">Читать больше</span>
 						</p>
 						<p class="article__text">
 							Например, чем прозрачнее ветровое стекло автомобиля, тем более безопасная езда. А вот чем прозрачнее перегородки в туалетной комнате, тем менее она пригодна.
@@ -57,7 +75,7 @@
 						</p>
 					</div>
 
-					<div class="col-md-6">
+					<div class="col-md-6 col-sm-6 col-xs-12 article-mob-hidden">
 						<div class="row">
 							<div class="col-md-12">
 								<img src="img/pryanik-layout-article/1.jpg" alt="" class="article__img">
@@ -83,14 +101,14 @@
 			<section class="more-articles">
 				<h2 class="more-articles__h2">Другие истории Пряника</h2>
 				<div class="row">
-					<div class="col-md-6">
-						<a href="" class="more-articles__box">
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<a href="" class="more-articles__box more-articles__box--mob">
 							<img src="img/pryanik-layout-article/7.jpg" alt="" class="more-articles__img">
 							<h3 class="more-articles__title">О прозрачности</h3>
 							<span class="more-articles__text">Приступая к разработке новой линии своих изделий, не скроем, Pryanik несколько колебался.</span>
 						</a>
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-6 col-sm-6">
 						<a href="" class="more-articles__box">
 							<img src="img/pryanik-layout-article/8.jpg" alt="" class="more-articles__img">
 							<h3 class="more-articles__title">О подковах</h3>
@@ -146,6 +164,7 @@
 	</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>  
+<script src="js/slick.min.js"></script>  	
 <script src="js/script.js"></script>  	
 </body>
 </html>	

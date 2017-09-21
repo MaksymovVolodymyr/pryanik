@@ -480,12 +480,12 @@
 	.corpor-mob-hidden {
 		display: none;
 	}
-	.corpor-mob {
+	.mob-img-slider {
 		margin-bottom: 25px;
 		display: block;
 		height: 300px;
 		padding: 0;
-		&__box {
+		&__item {
 			height: 300px;
 		}
 		.slick-prev {
@@ -631,6 +631,56 @@
 	//general
 	.pad0 {
 		padding: 0;
+	}
+
+	//article
+	.article-mob-hidden {
+		display: none;
+	}
+	.article {
+		padding: 0 25px;
+		&__h2 {
+			padding: 0 15px;
+		}
+		&__more {
+			margin-top: 20px;
+			display: block;
+			@include font16light;
+			text-decoration: underline;
+			cursor: pointer;
+		}
+		&__text {
+			display: none;
+			&--first {
+				display: block;
+			}
+		}
+	}
+	.more-articles {
+		&__h2 {
+			margin-bottom: 30px;
+			padding: 0 40px;
+		}
+		&__box {
+			display: none;
+			margin: 0 -15px;
+			&--mob {
+				display: block;
+			}
+		}
+		&__img {
+			margin-bottom: 20px;
+		}
+		&__title {
+			margin-bottom: 10px;
+			padding: 0 40px;
+			font-size: 18px;
+		}
+		&__text {
+			display: block;
+			padding: 0 40px;
+			font-size: 14px;
+		}
 	}
 }
 
