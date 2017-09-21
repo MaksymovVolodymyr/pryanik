@@ -1384,6 +1384,21 @@ footer {
   .checkout__item {
     display: block; }
 
+.thankyou {
+  margin-top: 45px;
+  font-weight: 300; }
+  .thankyou__h1 {
+    margin-bottom: 20px;
+    font-size: 30px; }
+  .thankyou__text {
+    margin-bottom: 50px;
+    font-size: 16px; }
+  .thankyou__btn {
+    display: block;
+    width: 300px;
+    max-width: 100%;
+    text-align: center; }
+
 .header-menu__item--mob, .header-menu__close, .header-menu__open, .mob-btn, .story-mob__img, .corpor__more, .corpor-mob, .header-mob-back {
   display: none; }
 
@@ -1865,6 +1880,15 @@ footer {
       text-align: left; }
     .checkout__btn {
       margin-top: 50px; }
+  .thankyou {
+    padding: 0 40px;
+    margin-top: 35px; }
+    .thankyou__h2 {
+      margin-bottom: 20px;
+      font-size: 24px; }
+    .thankyou__text {
+      margin-bottom: 30px;
+      font-size: 14px; }
   .pad0 {
     padding: 0; } }
 
