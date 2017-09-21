@@ -10,7 +10,7 @@ header {
 	z-index: 100;
 }
 .header-logo {
-	width: 170px;
+	width: 150px;
 }
 .header-menu {
 	@include flex-sp-betw;
@@ -207,7 +207,7 @@ header {
 	padding: 0 10px;
 	height: 190px;
 	@include font16light;
-	line-heigh: 1.25;
+	line-height: 1.25;
 	text-align: center;
 	border: 1px solid #000;
 	&__title {
@@ -254,6 +254,41 @@ header {
 		height: 50px;
 		border: 1px solid #000;
 		outline: none;
+		&:disabled {
+			opacity: 0.5;
+			background-color: #fff;
+		}
+	}
+	&__select {
+		-webkit-appearance: none;
+		@extend .form__input;
+	}
+	&__select-decore {
+		width: 320px;
+		max-width: 100%;
+		position: relative;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 26px;
+			right: 20px;
+			width: 13px;
+			height: 1px;
+			background-color: #000;
+			transform: rotate(45deg);
+			z-index: 10;
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			top: 26px;
+			right: 11px;
+			width: 13px;
+			height: 1px;
+			background-color: #000;
+			transform: rotate(-45deg);
+			z-index: 10;
+		}
 	}
 	&__textarea {
 		@extend .form__input;
@@ -267,29 +302,21 @@ header {
 	}
 	&__placehold {
 		position: relative;
-		&:after {
+		&__item {
 			transition: all 0.3s;
 			position: absolute;
 			top: 18px;
 			left: 18px;
 			@include font16light;
 		}
-		&--name:after {
-			content: 'Имя';
-		}
-		&--tel:after {
-			content: 'Телефон';
-		}
-		&--textarea:after {
-			content: 'Что вас интересует';
-		}
 	}
-	&__placehold--active:after {
+	&__placehold--active .form__placehold__item {
 		transition: all 0.3s;
 		top: 5px;
 		font-size: 10px;
 	}
 }
+
 
 //howToBuy
 .how-to-buy-menu {
@@ -323,7 +350,9 @@ header {
 		line-height: 1.25;
 	}
 }
-
+.how-to-buy-mob {
+	display: none;
+}
 //contact
 .contact {
 	@include font16light;
@@ -435,6 +464,8 @@ $boxHeight: 360px;
 	}
 }
 .bag-prod {
+	display: flex;
+	align-items: center;
 	min-height: 105px;
 	margin-bottom: 30px;
 	margin-right: 20px;
@@ -456,19 +487,16 @@ $boxHeight: 360px;
 		text-align: center;
 	}
 	&__color {
-		display: inline-block;
-		margin-right: 20px;
+		margin: 0 20px;
 		width: 20px;
 		height: 20px;
 	}
 	&__size {
-		display: inline-block;
-		margin-right: 20px;
+		margin-right: 25px;
 		font-size: 12px;
 		text-transform: uppercase;
 	}
 	&__price {
-		display: inline-block;
 		font-size: 18px;
 	}
 	&__close {
@@ -476,12 +504,13 @@ $boxHeight: 360px;
 		top: 0;
 		right: 0;
 		height: 8px;
-		width: 80px;
+		width: 8px;
 		cursor: pointer;
 		&:after {
 			content: '';
 			position: absolute;
-			width: 10%;
+			top: 2px;
+			width: 10px;
 			height: 1px;
 			background-color: #000;
 			transform: rotate(45deg);
@@ -489,7 +518,8 @@ $boxHeight: 360px;
 		&:before {
 			content: '';
 			position: absolute;
-			width: 10%;
+			top: 2px;
+			width: 10px;
 			height: 1px;
 			background-color: #000;
 			transform: rotate(-45deg);
@@ -501,6 +531,24 @@ $boxHeight: 360px;
 		left: 140px;
 		font-size: 12px;
 	}
+}
+.bag-form {
+	margin-top: 40px;
+	&:first-child {
+		margin-top: 0;
+	}
+	&__btn {
+		margin-top: 20px;
+		width: 200px;
+	}
+	&__link {
+		margin-left: 40px;
+		border-bottom: 1px solid #000;
+		@include font16light;
+	}
+}
+.bag-summ {
+	font-size: 20px;
 }
 
 //footer
@@ -538,4 +586,49 @@ footer {
 }
 .isagancy__link {
 	border-bottom: 1px solid #000;
+}
+
+//checkout
+.checkout {
+	font-weight: 300;
+	&__title {
+		margin-bottom: 20px;
+		font-size: 14px;
+	}
+	&__box {
+		margin-bottom: 35px;
+		font-size: 20px;
+		line-height: 1.3;
+	}
+	&__btn {
+		padding-left: 42px;
+		padding-right: 42px;
+	}
+	&__back-link {
+		margin-left: 40px;
+		font-size: 16px;
+		border-bottom: 1px solid #000;
+	}
+	&__item {
+		display: block;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//hidden
+.header-menu__item--mob, .header-menu__close, .header-menu__open, .mob-btn, .story-mob__img, .corpor__more, .corpor-mob, .header-mob-back {
+	display: none;
 }

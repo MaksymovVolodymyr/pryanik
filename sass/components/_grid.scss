@@ -14,6 +14,14 @@
     width: 970px;
   }
 }
+@media (max-width: 768px) {
+  .container {
+    padding: 0;
+  }
+  .p-l {
+    padding-left: 15px;
+  }
+}
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
@@ -685,5 +693,10 @@
 @media (max-width: 992px) {
   .p-r, .p-l {
     padding: 0 15px;
+  }
+}
+@media (max-width: 768px) {
+  .row {
+    margin: 0;
   }
 }

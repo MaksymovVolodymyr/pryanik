@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Chekout</title>
+	<title>Bag</title>
 	<link rel="stylesheet" href="build/assets/css/main.css">
 	<link rel="SHORTCUT ICON" href="img/fav.ico">
 </head>
@@ -71,23 +71,56 @@
 					</div>
 				</div>
 
-				<div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-1 bag-mob-form-wrapper checkout">
-					<div class="checkout__title">Мои данные</div>
-					<div class="checkout__box">
-						Виталина Нестеренко<br>
-						<a href="tel:0937298983" class="checkout__item">0937298983</a>
-						<a href="mailto:" class="checkout__item">vitanes@gmail.com</a>
-					</div>
-					<div class="checkout__title">Оплата</div>
-					<div class="checkout__box">
-						Наличными
-					</div>
-					<div class="checkout__title">Доставка</div>
-					<div class="checkout__box">
-						Самовывоз
-					</div>
-					<a href="" class="btn checkout__btn hover-line">Подтвердить</a>
-					<a href="" class="checkout__back-link">редактировать</a>
+				<div class="col-md-6 col-md-offset-1 col-sm-6 p-l col-xs-12 bag-mob-form-wrapper">
+					<form action="" class="form bag-form">
+						<h2 class="form__h2">Введите свои данные</h2>
+
+						<div class="form__placehold">
+							<span class="form__placehold__item">Имя</span>
+							<input tabindex="1" type="text" class="form__input">
+						</div>
+
+						<div class="form__placehold">
+							<span class="form__placehold__item">Телефон</span>
+							<input tabindex="1" type="tel" class="form__input">
+						</div>
+							
+						<div class="form__placehold">
+							<span class="form__placehold__item">Почта</span>
+							<input tabindex="1" type="tel" class="form__input">
+						</div>	
+					</form>
+
+					<form action="" class="form bag-form">
+						<h2 class="form__h2">Выберите способ доставки</h2>
+
+						<div class="form__select-decore">
+							<select name="" id="" class="form__select">
+								<option value="" class="form__option">Новая почта</option>
+								<option value="" class="form__option">Новая почта</option>
+								<option value="" class="form__option">Новая почта</option>
+							</select>
+						</div>
+						<div class="form__placehold">
+							<span class="form__placehold__item">Введите номер отделения</span>
+							<input disabled tabindex="1" type="text" class="form__input">
+						</div>
+					</form>
+
+					<form action="" class="form bag-form">
+						<h2 class="form__h2">Выберите способ оплаты</h2>
+
+						<div class="form__select-decore">
+							<select name="" id="" class="form__select">
+								<option value="" class="form__option">Картой через Приват24</option>
+								<option value="" class="form__option">Картой через Приват24</option>
+								<option value="" class="form__option">Картой через Приват24</option>
+							</select>
+						</div>
+
+						<button type="submit" class="btn bag-form__btn hover-line">Продолжить</button>
+						<a href="" class="bag-form__link">выбрать еще товары</a>
+					</form>
 
 				</div>
 			</div>
