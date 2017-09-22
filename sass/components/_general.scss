@@ -1,22 +1,23 @@
 *, *:before, *:after {
 	box-sizing: border-box;
 }
+@font-face {
+	font-family: 'Lato';
+	src: url('../../../fonts/Lato-Light.ttf');
+	font-weight: 300;
+}
+@font-face {
+	font-family: 'Lato';
+	src: url('../../../fonts/Lato-LightItalic.ttf');
+	font-weight: 300;
+	font-style: italic;
+}
+
 @mixin flex-sp-betw {
 	display: flex;
 	justify-content: space-between;
 }
-@mixin font24light  {
-	font: {
-		size: 24px;
-		weight: 300;
-	}
-}
-@mixin font16light  {
-	font: {
-		size: 16px;
-		weight: 300;
-	}
-}
+
 @mixin ab-center {
 	position: absolute;
 	top: 50%;
@@ -25,6 +26,8 @@
 }
 body {
 	color: #000;
+	font-weight: 300;
+	font-family: 'Lato', sans-serif;;
 }
 main {
 	padding-top: 83px;
@@ -35,7 +38,7 @@ a {
 	text-decoration: none;
 }
 h2 {
-	@include font24light;
+	font-size: 24px;
 }
 img {
 	max-width: 100%;
@@ -87,7 +90,7 @@ img {
 .main-link {
 	padding-top: 32px;
 	padding-bottom: 32px;
-	@include font24light;
+	font-size: 24px;
 	background-color: #FFF;
 }
 .col-low {
