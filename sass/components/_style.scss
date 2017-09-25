@@ -239,6 +239,7 @@ header {
 
 //form
 .form {
+	font-family: 'Lato';
 	max-width: 100%;
 	&__h2 {
 		margin-bottom: 30px;
@@ -348,6 +349,9 @@ header {
 		line-height: 1.25;
 	}
 }
+.how-to-buy__section {
+	margin-bottom: 85px;
+}
 .how-to-buy-mob {
 	display: none;
 }
@@ -435,7 +439,10 @@ $boxHeight: 360px;
 			size: 12px;
 			weight: 300;
 		}
-		color: #606060;
+		opacity: 0.7;
+		&--active {
+			opacity: 1;
+		}
 		text-transform: uppercase;
 		&:after {
 			content: '';
