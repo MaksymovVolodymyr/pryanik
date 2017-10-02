@@ -21,6 +21,10 @@
 		left: 50%;
 		transform: translateX(-50%);
 	}
+	.social {
+		position: static;
+		transform: none;
+	}
 }
 @media (max-width: 960px) {
 	body {
