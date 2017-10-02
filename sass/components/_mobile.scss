@@ -1,41 +1,45 @@
+@media (max-width: 1040px) {
+	.isagency {
+		position: static;
+		transform: none;
+	}
+}
+@media (max-width: 992px) {
+	footer {
+		margin: 0 auto;
+		width: 750px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	header {
+		width: 750px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.how-to-buy-menu {
+		width: 720px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
 @media (max-width: 960px) {
 	body {
 		overflow-x: hidden;
 	}
 	header {
-		max-width: 100%;
+		height: auto;
+		padding: 22px 0;
 		width: 720px;
-		padding: 0;
-		height: 50px;
 	}
-	.header-mob-back {
-		display: block;
+	.header-logo {
+		margin: auto;
+	}
+	.header-submenu {
 		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
 		left: 0;
-		height: 18px;
-		width: 10px;
-		&:before {
-			content: '';
-			position: absolute;
-			top: 4px;
-			right: 0;
-			width: 11px;
-			height: 1px;
-			background-color: #000;
-			transform: rotate(-45deg);
-		}
-		&:after {
-			content: '';
-			position: absolute;
-			top: 12px;
-			right: 0;
-			width: 11px;
-			height: 1px;
-			background-color: #000;
-			transform: rotate(45deg);
-		}
+	}
+	.bag-mob-hidden {
+		display: none;
 	}
 	.header-menu {
 		position: fixed;
@@ -152,12 +156,17 @@
 	.prod-card-slider {
 		width: 270px;
 	}
+	//footer
+	.footer-container {
+		flex-wrap: wrap;
+	}
+	
 }
 
 //other
 @media (max-width: 960px) {
 	main {
-		padding-top: 50px;
+		padding-top: 60px;
 		margin-bottom: 70px;
 	}
 	.how-to-buy-menu {
@@ -167,10 +176,13 @@
 
 @media (max-width: 768px) {
 	//header
+	header {
+		width: 100%;
+	}
 	.header-menu__open {
 		right: 40px;
 	}
-	.header-mob-back {
+	.header-submenu {
 		left: 40px;
 	}
 
@@ -305,6 +317,11 @@
 		&__btn {
 			margin: -30px auto 0;
 		}
+		&__img {
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+		}
 	}
 	.story-mob__img {
 		display: block;
@@ -336,27 +353,33 @@
 
 	//footer
 	footer {
-		padding-bottom: 65px;
-	}
-	.footer-menu {
-		display: none;
+		width: 100%;
+		padding: 0 40px 65px;
 	}
 	.social {
-		padding: 0 25px;
+		margin: 22px 0 12px;
+		width: 100%;
 		margin-bottom: 25px;
 	}
 	.contacts {
-		padding: 0 25px;
 		margin-bottom: 35px;
 	}
 	.rights {
-		padding: 0 25px;
 		margin-bottom: 25px;
 	}
-	.isagancy {
-		padding: 0 25px;
+	.contacts {
+		&__item {
+			display: block;
+			margin: 0 0 15px;
+			width: 100%;
+		}
+		br {
+			display: none;
+		}
 	}
-
+	.footer-container:first-child {
+		margin: 0;
+	}
 	//contacts
 	.contact__img {
 		display: none;
@@ -364,6 +387,7 @@
 	.contact {
 		display: none;
 	}
+
 	.cortact__form {
 		padding: 0 25px;
 		width: 400px;
@@ -451,10 +475,11 @@
 			height: 430px;
 			padding: 0;
 		}
-		&__item {
+		&__link {
 			display: none;
 			margin: 0 auto 10px;
 			max-width: 300px;
+			text-align: center;
 			&--mob {
 				display: block;
 			}
@@ -676,7 +701,8 @@
 			}
 		}
 		&__img {
-			margin-bottom: 20px;
+			display: block;
+			margin: 0 auto 20px;
 		}
 		&__title {
 			margin-bottom: 10px;

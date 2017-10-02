@@ -33,7 +33,7 @@ body._ffn_page ._ffn_textNode {
 	font-family: 'Lato', sans-serif;
 }
 main {
-	padding-top: 83px;
+	padding-top: 100px;
 	margin-bottom: 125px;
 }
 a {
@@ -102,4 +102,7 @@ img {
 .fl-wrap {
 	@include flex-sp-betw;
 	flex-wrap: wrap;
+}
+.slick-slide img {
+	margin: 0 auto;
 }

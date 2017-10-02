@@ -24,6 +24,11 @@ $(document).ready(function() {
 	    }, 400); 
 	    $('.header-menu__open').fadeIn('fast'); 
 	});   
+
+	$('.lang__toggle').click(function() {
+		$(this).toggleClass('lang__toggle--rotate');
+		$('.lang__item--hidden').slideToggle();
+	})
 	 	
 	//prod
 	$('.open-prod-btn').click(function() {
@@ -69,7 +74,7 @@ $(document).ready(function() {
 	//lisitngPage
 
 	$('.lispahe-mob-btn').click(function() {
-		$('.listpage__item').slideDown().css('display', 'block');
+		$('.listpage__link').slideDown().css('display', 'block');
 		$(this).hide();
 	})
 
