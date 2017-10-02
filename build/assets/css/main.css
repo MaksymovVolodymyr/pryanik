@@ -1256,7 +1256,8 @@ header {
 
 .listpage__link {
   display: block;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  text-align: center; }
 
 .listpage__name {
   position: relative;
@@ -1967,8 +1968,7 @@ footer {
   .listpage__link {
     display: none;
     margin: 0 auto 10px;
-    max-width: 300px;
-    text-align: center; }
+    max-width: 300px; }
     .listpage__link--mob {
       display: block; }
   .lispahe-mob-btn {
