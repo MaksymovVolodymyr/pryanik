@@ -25,6 +25,10 @@
 		position: static;
 		transform: none;
 	}
+	//footer
+	.footer-container {
+		flex-wrap: wrap;
+	}
 }
 @media (max-width: 960px) {
 	body {
@@ -160,10 +164,7 @@
 	.prod-card-slider {
 		width: 270px;
 	}
-	//footer
-	.footer-container {
-		flex-wrap: wrap;
-	}
+	
 	
 }
 

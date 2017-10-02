@@ -1625,7 +1625,10 @@ footer {
     transform: translateX(-50%); }
   .social {
     position: static;
-    transform: none; } }
+    transform: none; }
+  .footer-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
 
 @media (max-width: 960px) {
   body {
@@ -1736,10 +1739,7 @@ footer {
     display: block;
     text-align: center; }
   .prod-card-slider {
-    width: 270px; }
-  .footer-container {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; } }
+    width: 270px; } }
 
 @media (max-width: 960px) {
   main {
