@@ -900,6 +900,25 @@ header {
 .header-logo {
   width: 150px; }
 
+.goods-menu {
+  position: absolute;
+  bottom: 0;
+  top: 20px;
+  left: -10px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column;
+      flex-flow: column;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+  z-index: 10; }
+  .goods-menu__item {
+    padding: 10px;
+    background-color: #FFF; }
+  .goods-menu__link {
+    font-size: 16px; }
+
 .header-menu {
   display: -ms-flexbox;
   display: flex;
@@ -909,6 +928,13 @@ header {
     margin-right: 25px; }
     .header-menu__item:last-child {
       margin-right: 0; }
+    .header-menu__item--goods {
+      position: relative;
+      border-bottom: 20px solid #fff; }
+    .header-menu__item--goods:hover .goods-menu {
+      visibility: visible;
+      opacity: 1;
+      transition: all 0.3s; }
   .header-menu__link {
     font-size: 16px;
     text-transform: uppercase; }
@@ -1597,7 +1623,7 @@ footer {
   .see-more-prod__h2 {
     margin-bottom: 30px; }
   .see-more-prod__item {
-    display: block;
+    display: bg;
     width: 100%;
     height: 120px; }
 

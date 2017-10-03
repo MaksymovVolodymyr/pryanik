@@ -17,6 +17,7 @@ $(document).ready(function() {
 	    }, 400); 
 	    $(this).fadeOut('fast'); 
 	});
+		
 
 	$('.header-menu__close').click(function() {  
 	    $('.header-menu').animate({  

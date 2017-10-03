@@ -13,12 +13,40 @@ header {
 .header-logo {
 	width: 150px;
 }
+.goods-menu {
+	position: absolute;
+	bottom: 0;
+	top: 20px;
+	left: -10px;
+	display: flex;
+	flex-flow: column;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.3s;
+	z-index: 10;
+	&__item {
+		padding:10px;
+		background-color: #FFF;
+	}
+	&__link {
+		font-size: 16px;
+	}
+}
 .header-menu {
 	@include flex-sp-betw;
 	&__item {
 		margin-right: 25px;
 		&:last-child {
 			margin-right: 0;
+		}
+		&--goods {
+			position: relative;
+			border-bottom: 20px solid #fff;
+		}
+		&--goods:hover .goods-menu {
+			visibility: visible;
+			opacity: 1;
+			transition: all 0.3s;
 		}
 	}
 	&__link {
@@ -85,6 +113,10 @@ header {
 		}
 	}
 }
+
+
+
+
 //home
 
 .h-sec1 {
@@ -845,7 +877,7 @@ footer {
 		margin-bottom: 30px;
 	}
 	&__item {
-		display: block;
+		display: bg;
 		width: 100%;
 		height: 120px;
 	}
