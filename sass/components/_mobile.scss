@@ -49,6 +49,51 @@
 	.bag-mob-hidden {
 		display: none;
 	}
+	.goods-menu {
+		display: none;
+		opacity: 1;
+		position: static;
+		visibility: visible;
+		transition: none;
+	}
+	.goods-menu-toggle {
+		display: block;
+		position: absolute;
+		top: 8px;
+		right: -20px;
+		width: 10px;
+		height: 6px;
+		cursor: pointer;
+		transition: none;
+		&:before {
+			content: '';
+			position: absolute;
+			top: 3px;
+			left: -1px;
+			width: 7px;
+			height: 1px;
+			background-color: #000;
+			transform: rotate(45deg);
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			top: 3px;
+			left: 4px;
+			width: 7px;
+			height: 1px;
+			background-color: #000;
+			transform: rotate(-45deg);
+		}
+		&--reset {
+			transform: rotate(0);
+			transition: .6s;
+		}
+		&--rotate {
+			transform: rotate(-180deg);
+			transition: .6s;
+		}
+	}
 	.header-menu {
 		position: fixed;
 		z-index: 1000000;
@@ -63,8 +108,12 @@
 		text-align: center;
 		&__item {
 			margin: 0 0 25px;
+			border: none;
 			&--mob {
 				display: block;
+			}
+			&--goods:hover .goods-menu {
+				transition: none;
 			}
 		}
 		&__close {

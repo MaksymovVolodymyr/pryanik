@@ -17,6 +17,13 @@ $(document).ready(function() {
 	    }, 400); 
 	    $(this).fadeOut('fast'); 
 	});
+
+	$('.goods-menu-toggle').click(function( event ) {
+		event.preventDefault();
+		$(this).toggleClass('goods-menu-toggle--rotate');
+		$(this).parent().parent().find('.goods-menu').slideToggle();
+
+	});
 		
 
 	$('.header-menu__close').click(function() {  
@@ -28,7 +35,7 @@ $(document).ready(function() {
 
 	$('.lang__toggle').click(function() {
 		$(this).toggleClass('lang__toggle--rotate');
-		$('.lang__item--hidden').slideToggle();
+		$('.lang__item--hidden').fadeToggle();
 	})
 	 	
 	//prod
@@ -188,3 +195,7 @@ $(document).ready(function() {
 		$(this).toggleClass('prod-card-mob-open--rotate');
 	});
 });
+
+
+
+//
