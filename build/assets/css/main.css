@@ -1631,6 +1631,18 @@ footer {
 .header-menu__item--mob, .header-menu__close, .header-menu__open, .mob-btn, .story-mob__img, .corpor__more, .mob-img-slider, .prod-card-mob-open, .goods-menu-toggle {
   display: none; }
 
+@media (max-width: 1140px) {
+  .goods-menu {
+    bottom: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: start;
+        justify-content: flex-start; }
+    .goods-menu__item {
+      margin-bottom: 5px; } }
+
 @media (max-width: 1040px) {
   .isagency {
     position: static;
@@ -1675,11 +1687,16 @@ footer {
   .bag-mob-hidden {
     display: none; }
   .goods-menu {
+    padding: 10px 0 0;
     display: none;
     opacity: 1;
     position: static;
     visibility: visible;
     transition: none; }
+    .goods-menu__item {
+      margin: 0 0 10px; }
+    .goods-menu__link {
+      font-size: 16px; }
   .goods-menu-toggle {
     display: block;
     position: absolute;
