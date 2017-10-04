@@ -13,24 +13,45 @@ header {
 .header-logo {
 	width: 150px;
 }
+// .goods-menu {
+// 	position: absolute;
+// 	top: 20px;
+// 	left: -10px;
+// 	display: flex;
+// 	flex-flow: column;
+// 	visibility: hidden;
+// 	opacity: 0;
+// 	transition: all 0.3s;
+// 	z-index: 10;
+// 	&__item {
+// 		padding:10px;
+// 		background-color: #FFF;
+// 	}
+// 	&__link {
+// 		font-size: 16px;
+// 	}
+// }
 .goods-menu {
 	position: absolute;
-	bottom: 0;
-	top: 20px;
-	left: -10px;
+	left: 0;
+	width: 100%;
+	bottom: 0px;
+	padding: 20px 0;
 	display: flex;
-	flex-flow: column;
+	justify-content: center;
 	visibility: hidden;
-	opacity: 0;
-	transition: all 0.3s;
-	z-index: 10;
-	&__item {
-		padding:10px;
-		background-color: #FFF;
-	}
-	&__link {
-		font-size: 16px;
-	}
+ 	opacity: 0;
+ 	transition: all 0.3s;
+ 	z-index: 10;
+ 	&__item {
+ 		margin-right: 20px;
+ 		&:last-child {
+ 			margin-right: 0;
+ 		}
+ 	}
+ 	&__link {
+ 		font-size: 14px;
+ 	}
 }
 .header-menu {
 	@include flex-sp-betw;
@@ -40,7 +61,7 @@ header {
 			margin-right: 0;
 		}
 		&--goods {
-			position: relative;
+			// position: relative;
 			border-bottom: 20px solid #fff;
 		}
 		&--goods:hover .goods-menu {
@@ -120,7 +141,7 @@ header {
 //home
 
 .h-sec1 {
-	margin-bottom: 75px;
+	margin: 0 -50px 75px;
 	height: 525px;
 	display: flex;
 	flex-flow: column;
