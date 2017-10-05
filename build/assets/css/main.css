@@ -1763,7 +1763,7 @@ footer {
       display: block;
       position: absolute;
       top: 20px;
-      right: 40px;
+      right: 20px;
       height: 20px;
       width: 20px;
       cursor: pointer; }
@@ -1845,6 +1845,8 @@ footer {
     width: 720px; } }
 
 @media (max-width: 768px) {
+  .header-menu__close {
+    right: 40px; }
   header {
     width: 100%; }
   .header-menu__open {
