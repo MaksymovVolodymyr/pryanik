@@ -1462,11 +1462,6 @@ footer {
     .social__link:last-child {
       margin-right: 0; }
 
-.contacts__item {
-  margin-bottom: 15px; }
-  .contacts__item:first-child {
-    margin-right: 20px; }
-
 .isagency {
   position: absolute;
   top: 0;
@@ -1994,12 +1989,6 @@ footer {
     margin-bottom: 35px; }
   .rights {
     margin-bottom: 25px; }
-  .contacts__item {
-    display: block;
-    margin: 0 0 15px;
-    width: 100%; }
-  .contacts br {
-    display: none; }
   .footer-container:first-child {
     margin: 0; }
   .contact__img {
