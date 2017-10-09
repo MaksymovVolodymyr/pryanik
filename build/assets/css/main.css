@@ -788,6 +788,10 @@ table {
   .row {
     margin: 0; } }
 
+@media (max-width: 992px) {
+  .bag-wrapper {
+    width: 400px; } }
+
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -1173,6 +1177,7 @@ header {
       opacity: 0.5;
       background-color: #fff; }
   .form__select {
+    font-family: 'Lato';
     -webkit-appearance: none; }
   .form__select-decore {
     width: 320px;
@@ -1361,14 +1366,12 @@ header {
   vertical-align: middle; }
   .bag-prod__img {
     display: inline-block;
-    max-width: 50%;
+    max-width: 140px;
     height: auto; }
   .bag-prod__title {
-    width: 100%;
     position: absolute;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 140px;
     font-size: 18px;
     text-align: center; }
   .bag-prod__color {
@@ -2144,7 +2147,8 @@ footer {
         transform: rotate(45deg);
         opacity: 1; }
   .bag-mob-form-wrapper {
-    padding: 0 40px; }
+    padding: 0 40px;
+    width: 100%; }
   .bag-form {
     width: 320px;
     max-width: 100%;

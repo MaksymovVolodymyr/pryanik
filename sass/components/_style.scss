@@ -369,6 +369,7 @@ header {
 		}
 	}
 	&__select {
+		font-family: 'Lato';
 		-webkit-appearance: none;
 		@extend .form__input;
 	}
@@ -603,15 +604,13 @@ header {
 	vertical-align: middle;
 	&__img {
 		display: inline-block;
-		max-width: 50%;
+		max-width: 140px;
 		height: auto;
 	}
 	&__title {
-		width: 100%;
 		position: absolute;
 		top: 0;
-		left: 50%;
-		transform: translateX(-50%);
+		left: 140px;
 		font-size: 18px;
 		text-align: center;
 	}
