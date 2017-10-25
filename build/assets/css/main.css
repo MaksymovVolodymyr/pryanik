@@ -1239,6 +1239,7 @@ header {
 .how-to-buy {
   font-size: 16px; }
   .how-to-buy__h2 {
+    padding-top: 30px;
     margin: 30px 0; }
     .how-to-buy__h2:first-child {
       margin-top: 0; }
@@ -1247,7 +1248,7 @@ header {
     line-height: 1.25; }
 
 .how-to-buy__section {
-  margin-bottom: 85px; }
+  margin-bottom: 55px; }
 
 .how-to-buy-mob {
   display: none; }
@@ -1440,7 +1441,7 @@ footer {
   -ms-flex-pack: justify;
       justify-content: space-between; }
   .footer-container:first-child {
-    margin-bottom: 95px; }
+    margin-bottom: 135px; }
 
 .footer-menu {
   text-transform: uppercase;
@@ -1453,17 +1454,13 @@ footer {
   .footer-menu__link:after {
     bottom: -2px; }
 
-.social {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%); }
-  .social__link {
-    margin-right: 10px;
-    display: inline-block;
-    width: 30px;
-    height: 30px; }
-    .social__link:last-child {
-      margin-right: 0; }
+.social__link {
+  margin-right: 10px;
+  display: inline-block;
+  width: 20px;
+  height: 20px; }
+  .social__link:last-child {
+    margin-right: 0; }
 
 .isagency {
   position: absolute;
@@ -1472,6 +1469,16 @@ footer {
   transform: translateX(-50%); }
   .isagency__link {
     border-bottom: 1px solid #000; }
+
+.footer-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); }
+
+.conditions {
+  margin-top: 20px;
+  font-size: 12px;
+  line-height: 1.7; }
 
 .checkout__title {
   margin-bottom: 20px;
@@ -1659,7 +1666,7 @@ footer {
     width: 720px;
     left: 50%;
     transform: translateX(-50%); }
-  .social {
+  .footer-center {
     position: static;
     transform: none; }
   .footer-container {
@@ -1984,7 +1991,7 @@ footer {
   footer {
     width: 100%;
     padding: 0 40px 65px; }
-  .social {
+  .footer-center {
     margin: 22px 0 12px;
     width: 100%;
     margin-bottom: 25px; }
