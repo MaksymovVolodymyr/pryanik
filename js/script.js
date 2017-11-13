@@ -1,5 +1,14 @@
 $(document).ready(function() {
 
+	//main slider
+	$('.main-slider').slick({
+		dots: false,
+		arrows: false,
+		fade: true,
+		autoplay: true
+	});
+	//
+
 	//form
 	$('.form__input').focus( movePlaceholder );
 	$('.form__textarea').focus( movePlaceholder );

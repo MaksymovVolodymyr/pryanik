@@ -143,6 +143,9 @@
 		right: 200%;
 		background-color: #FFF;
 		text-align: center;
+		&__link {
+			font-size: 16px;
+		}
 		&__item {
 			margin: 0 0 25px;
 			border: none;
@@ -266,6 +269,19 @@
 }
 
 @media (max-width: 768px) {
+
+	//logos
+	.b2b-logos {
+		padding: 0 40px;
+		&__item {
+			width: 100%;
+			height: auto;
+			margin: 20px;
+		}
+		&__h2 {
+			padding: 0 40px;
+		}
+	}
 	//header
 	.header-menu__close {
 		right: 40px;	
@@ -375,7 +391,11 @@
 			background-color: #FFF;
 			border: none;
 			font-size: 18px;
-			&:last-child {
+			&:nth-child(3) {
+				width: 110px;
+				padding: 20px 0;
+			}
+			&:nth-child(4) {
 				width: 110px;
 				padding: 20px 0;
 			}
