@@ -5,7 +5,8 @@ $(document).ready(function() {
 		dots: false,
 		arrows: false,
 		fade: true,
-		autoplay: true
+		autoplay: true,
+		pauseOnHover: false
 	});
 	//
 
