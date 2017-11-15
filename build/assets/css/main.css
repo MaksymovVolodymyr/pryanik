@@ -1641,8 +1641,6 @@ footer {
 .b2b-logos {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
   -ms-flex-flow: wrap;
       flex-flow: wrap; }
   .b2b-logos__item {
