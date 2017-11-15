@@ -829,24 +829,6 @@ img {
   max-width: 100%;
   height: auto; }
 
-.hover-line {
-  position: relative;
-  overflow: hidden;
-  transition: .4s; }
-  .hover-line:after {
-    position: absolute;
-    transition: .4s;
-    content: '';
-    width: 0;
-    left: 0;
-    bottom: 0;
-    height: 1px;
-    background: #000; }
-  .hover-line:hover {
-    cursor: pointer; }
-    .hover-line:hover:after {
-      width: 100%; }
-
 .bgimg {
   background-position: 50% 50%;
   background-size: cover;
@@ -890,8 +872,7 @@ img {
 header {
   position: fixed;
   width: 100%;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -1650,7 +1631,7 @@ footer {
   .see-more-prod__h2 {
     margin-bottom: 30px; }
   .see-more-prod__item {
-    display: bg;
+    display: block;
     width: 100%;
     height: 120px; }
 
@@ -1665,8 +1646,13 @@ footer {
   -ms-flex-flow: wrap;
       flex-flow: wrap; }
   .b2b-logos__item {
-    margin: 20px;
-    width: 20%;
+    margin-bottom: 30px;
+    width: 25%;
+    display: -ms-flexbox;
+    display: flex; }
+  .b2b-logos__img {
+    margin: auto;
+    max-width: 100px;
     height: auto; }
   .b2b-logos__h2 {
     margin: 80px 0 40px; }
@@ -1675,7 +1661,16 @@ footer {
   display: none; }
 
 .download {
+  padding-left: 30px;
+  position: relative;
   font-weight: 700; }
+  .download:before {
+    content: url(../../../img/download.svg);
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 0;
+    left: 0; }
 
 @media (max-width: 1140px) {
   .goods-menu {
