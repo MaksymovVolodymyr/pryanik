@@ -47,27 +47,27 @@ img {
 	max-width: 100%;
 	height: auto;
 }
-// .hover-line {
-// 	position: relative;
-// 	overflow: hidden;
-// 	transition: .4s;
-// 	&:after {
-// 	    position: absolute;
-// 	    transition: .4s;
-// 	    content: '';
-// 	    width: 0;
-// 	    left: 0;
-// 	    bottom: 0;
-// 	    height: 1px;
-// 	    background: #000;
-// 	  }
-// 	&:hover {
-// 		cursor: pointer;
-// 		&:after {
-// 			width: 100%;
-// 		}
-// 	}
-// }
+.hover-line {
+	position: relative;
+	overflow: hidden;
+	transition: .4s;
+	&:after {
+	    position: absolute;
+	    transition: .4s;
+	    content: '';
+	    width: 0;
+	    left: 0;
+	    bottom: 0;
+	    height: 1px;
+	    background: #000;
+	  }
+	&:hover {
+		cursor: pointer;
+		&:after {
+			width: 100%;
+		}
+	}
+}
 .bgimg {
 	background-position: 50% 50%;
 	background-size: cover;

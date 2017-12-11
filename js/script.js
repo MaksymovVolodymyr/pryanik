@@ -162,7 +162,7 @@ $(document).ready(function() {
 
 	$('.prod-card-slider').slick({
 		dots: false,
-		arrows: false,
+		arrows: true,
 		asNavFor: '.prod-card-subslider',
 		fade: true,
 	});
@@ -190,10 +190,22 @@ $(document).ready(function() {
   		]
 	});
 
-	$('.prod-card-slider__item').zoom({
-		magnify: 3,
-		on: 'click'
-	})
+	$('.prod-card-slider').click(function() {
+		// $(this).slick('unslick');
+
+		// var $newSlider = $('.prod-card-slider').clone();
+
+		$('.popup-slider').append($('.prod-card-slider'));
+
+		$('.popup-slider').css('display', 'flex');
+
+		
+	});	
+
+	$('.popup-slider__close').click(function() {
+		$('.prod-slider-wrapper').append($('.prod-card-slider'));
+		$('.popup-slider').hide();
+	});
 
 	$('.prod-card-mob-open-c').click(function() {
 		$(this).parent().find('.prod-card__color--hidden').slideToggle();
